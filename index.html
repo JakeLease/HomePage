@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="top-widgets">
+        <div class="notes-widget">
+            <div class="notes-header">
+                <span>Quick Notes</span>
+                <button class="toggle-notes" aria-label="Toggle notes">
+                    <svg viewBox="0 0 24 24" width="16" height="16">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="notes-content">
+                <textarea id="quick-notes" placeholder="Type your notes here..."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="time" class="time"></div>
+        
+        <div class="search-container">
+            <input type="text" id="searchbox" placeholder="Search (y/youtube, r/reddit, gh/github, a/amazon)" autocomplete="off">
+            <div class="search-hints"></div>
+        </div>
+
+        <div class="bookmarks-container">
+            <div class="bookmarks-column">
+                <a href="https://raptus.site/?_rsrc=chrome/newtab&_t=4qh1m2&_u=kca4csikst" class="bookmark-item" style="--accent-color: #2980b9;">
+                    <span>Flixify</span>
+                </a>
+                <a href="https://www.youtube.com/" class="bookmark-item" style="--accent-color: #eb4d4b;">
+                    <span>Youtube</span>
+                </a>
+                <a href="http://twitch.tv/" class="bookmark-item" style="--accent-color: #2828c9;">
+                    <span>Twitch</span>
+                </a>
+                <a href="https://amazon.com" class="bookmark-item" style="--accent-color: #f39c12;">
+                    <span>Amazon</span>
+                </a>
+                <a href="https://www.reddit.com/" class="bookmark-item" style="--accent-color: #eb4d4b">
+                    <span>Reddit</span>
+                </a>
+                <a href="https://www.crunchyroll.com/videos/anime" class="bookmark-item" style="--accent-color: #fee11a">
+                    <span>Crunchyroll</span>
+                </a>
+            </div>
+
+            <div class="bookmarks-column">
+                <a href="https://brilliant.org/home/" class="bookmark-item" style="--accent-color: #27ae60;">
+                    <span>Brilliant</span>
+                </a>
+                <a href="https://doc.rust-lang.org/book/" class="bookmark-item" style="--accent-color: #c0392b;">
+                    <span>Rust Lang</span>
+                </a>
+                <a href="https://www.github.com" class="bookmark-item" style="--accent-color: #9b59b6;">
+                    <span>Github</span>
+                </a>
+                <a href="https://lichess.org/" class="bookmark-item" style="--accent-color: #ff0000">
+                    <span>Chess</span>
+                </a>
+                <a href="https://www.coursera.org/" class="bookmark-item" style="--accent-color: #eb4d4b">
+                    <span>Coursera</span>
+                </a>
+                <a href="https://www.codecademy.com/learn" class="bookmark-item" style="--accent-color: #1abc9c;">
+                    <span>Codecademy</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme-toggle">
+        <button id="theme-switch" aria-label="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z"/>
+            </svg>
+        </button>
+    </div>
+
+    <script src="src/app.js"></script>
+</body>
+</html> 
